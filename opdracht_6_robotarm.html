@@ -11,8 +11,17 @@
   				
 
   				// Je eigen code plaats je hier.
-
- 				robotArm.run();
+  				for(i=0; i<=6; i++){
+  					robotArm.moveRight();
+  				}
+  			for(a=0; a<=7; a++){
+  					robotArm.grab();
+  					robotArm.moveRight();
+  					robotArm.drop();
+  				for(i=0; i<=1; i++){
+  					robotArm.moveLeft();
+  				}
+ 			}
 
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
